@@ -60,4 +60,3 @@ For any queries or collaborations, feel free to reach out to the team lead: **Sh
 
 ---
 
-**Built with ❤️ by Team Techtonix**
