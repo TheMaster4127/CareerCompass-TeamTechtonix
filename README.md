@@ -19,7 +19,6 @@ CareerCompass is an AI-powered career guidance and skill development platform th
 
 ### 🎨 Frontend
 - **ReactJS** 
-- **Flutter**
 
 ### 🔧 Backend
 - **Python (Django)**
