@@ -1,4 +1,5 @@
 // src/App.tsx
+import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -8,12 +9,11 @@ import Register from "./pages/Auth/Register";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import { isAuthed } from "./lib/auth";
 
-function RequireAuth({ children }: { children: JSX.Element }) {
-  // Evaluate on each render so logout immediately protects
+function RequireAuth({ children }: { children: React.ReactNode }) {
   if (!isAuthed()) {
     return <Navigate to="/login" replace />;
   }
-  return children;
+  return <>{children}</>;
 }
 
 export default function App() {

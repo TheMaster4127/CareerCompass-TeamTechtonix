@@ -1,5 +1,8 @@
+
 // src/components/PillInput.tsx
-import { useState, KeyboardEvent } from "react";
+import { useState } from "react";
+import type { KeyboardEvent } from "react";
+
 
 export default function PillInput({
   label,

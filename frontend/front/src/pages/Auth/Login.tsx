@@ -20,7 +20,7 @@ export default function Login() {
       localStorage.setItem("token", data.token);
       localStorage.setItem("user_id", data.user_id);
       window.location.href = "/dashboard";
-    } catch (err: any) {
+    } catch (err: ) {
       setError(err?.response?.data?.error || "Invalid credentials");
     } finally {
       setLoading(false);
