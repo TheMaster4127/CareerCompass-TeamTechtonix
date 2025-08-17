@@ -30,7 +30,7 @@ def create_app():
     os.makedirs(app.instance_path, exist_ok=True)
 
     # CORS for local dev and Vercel
-    CORS(app, resources={r"/api/*": {"origins": ["http://localhost:5173", "https://*career-compass-team-techtonix-5ai8j0fg5-shounak-velips-projects.vercel.app"]}})
+    CORS(app, resources={r"/api/*": {"origins": ["http://localhost:5173", "https://career-compass-team-techtonix.vercel.app"]}})
     Swagger(app)
 
     # DB: SQLite by default; switch with DATABASE_URL later
