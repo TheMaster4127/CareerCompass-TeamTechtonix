@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Container */
+:root {
+  --container-max: 1200px;
+}
+
+html, body, #root { height: 100%; }
+body { @apply font-open text-gray-900 bg-white antialiased; }
+
+/* Typography mapping (pt -> visual px) */
+.h1 { @apply font-mont font-bold tracking-tight text-4xl md:text-5xl; }     /* ~32pt */
+.h2 { @apply font-mont font-semibold text-3xl; }                              /* ~24pt */
+.body { @apply text-base md:text-lg; }                                        /* ~14pt */
+.caption { @apply text-sm italic text-gray-500; }                              /* ~12pt */
+
+/* Utilities */
+.cc-container { @apply mx-auto w-full px-4; max-width: var(--container-max); }
+.cc-btn { @apply inline-flex items-center justify-center gap-2 rounded-lg px-5 py-2.5 text-sm font-semibold transition; }
+.cc-btn-primary { @apply cc-btn bg-cc-500 text-white shadow-soft hover:bg-cc-600; }
+.cc-btn-ghost { @apply cc-btn border border-gray-200 bg-white hover:bg-gray-50; }
+.cc-badge { @apply inline-flex items-center gap-2 rounded-full bg-cc-100 text-cc-800 px-3 py-1 text-sm font-semibold; }
+
+.cc-card { @apply rounded-xl2 bg-white shadow-card border border-gray-100; }
+
+.hero-surface {
+  background: radial-gradient(1000px 500px at 75% 25%, rgba(34, 197, 143, 0.08) 0%, rgba(34, 197, 143, 0) 60%), #ffffff;
+}
+.footer-grad { @apply text-white; background: linear-gradient(180deg, #22C587 0%, #0F8D61 100%); }
+
+.nav-link { @apply text-sm text-gray-600 hover:text-gray-900 transition; }
+.nav-link-active { @apply text-sm text-cc-700 font-semibold; }
+
+/* Gradients used in Auth left panel and CTA */
+.bg-hero-grad { background: linear-gradient(135deg, #F7FFFA 0%, #EAFBF3 40%, #A7EBCB 100%); }

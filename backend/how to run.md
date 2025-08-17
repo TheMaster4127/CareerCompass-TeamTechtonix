@@ -7,7 +7,10 @@ This guide explains how to run the CareerCompass Flask backend and test all API 
 Navigate to your backend folder and activate the virtual environment:
 
 ```bash
+HEAD
 cd C:\Users\shoun\OneDrive\Desktop\internship projext\backend #path of folder
+cd C:\Users\shoun\OneDrive\Desktop\internship projext\backend
+>>>>>>> e250e1d (final commit)
 venv\Scripts\activate       # Windows
 # source venv/bin/activate  # Mac/Linux
 ```
